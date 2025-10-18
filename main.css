@@ -1,0 +1,16 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 50px;
+}
+
+.negrita {
+font-weight: bold;
+}
+
+.mayuscula {
+    text-transform: uppercase;
+}
+
+::placeholder {
+    color: rgb(211, 130, 8);
+}

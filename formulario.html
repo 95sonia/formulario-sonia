@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Sonia</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+
+    <!--FORMULARIO 1 REGISTRO CLUB-->
+    <p class="negrita mayuscula">Completa el formulario para registrarte en el club:</p>
+    <form action="#" method="post" enctype="application/x-www-form-urlencoded" target="_blank" autocomplete="on"
+        novalidate name="formulariosocio" accept-charset="UTF-8" rel="noopener noreferrer">
+
+        <fieldset>
+            <legend class="negrita">Datos personales:</legend> <br>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Escribe tu nombre" autofocus
+                tabindex="1">
+            <br><br>
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required placeholder="Escribe tus apellidos" autofocus
+                tabindex="3">
+            <br><br>
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" min="18" max="100" tabindex="2">
+            <br>
+
+            <p>Sexo:</p>
+            <input type="radio" id="hombre" name="sexo" value="hombre">
+            <label for="hombre">Hombre</label><br>
+            <input type="radio" id="mujer" name="sexo" value="mujer">
+            <label for="mujer">Mujer</label>
+            <br><br>
+
+            <label for="sentir">Me siento del club</label>
+            <input type="checkbox" id="sentir" name="sentir" value="sí">
+            <br><br>
+
+            <label for="comentario">Escribe algo sobre tí:</label> <br>
+            <textarea id="comentario" name="comentario" rows="5" cols="40"
+                placeholder="Me gusta jugar a baloncesto"></textarea>
+            <br>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend class="negrita"> Datos de contacto:</legend> <br>
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required placeholder="ejemplo@dominio.com">
+            <br><br>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required placeholder="666 666 666">
+            <br>
+        </fieldset> <br>
+
+        <input type="reset" value="Borrar todo"> <br><br>
+        <input type="submit" value="Enviar">
+    </form> <br><br>
+
+    <!--FORMULARIO 2 REOBO BICI-->
+
+    <p class="negrita mayuscula">Registra el robo de tu bicicleta:</p>
+    <form action="#" method="post" enctype="application/x-www-form-urlencoded" target="_blank" autocomplete="on"
+        novalidate name="formulariosocio" accept-charset="UTF-8" rel="noopener noreferrer">
+        <fieldset>
+            <legend class="negrita"> Fecha y hora del robo:</legend> <br>
+
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha"> <br><br>
+
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora" name="hora"> <br><br>
+        </fieldset>
+        <br>
+
+
+        <fieldset>
+            <legend class="negrita"> Características:</legend> <br>
+
+            <label for="color">Color de la bicicleta:</label>
+            <input type="color" id="color" name="color"> <br><br>
+
+            <label for="precio">Rango de precio (de 0 a 500 euros):</label>
+            <input type="range" id="precio" name="precio" min="0" max="500" step="100" list="valores-range">
+            <datalist id="valores-range">
+                <option value="0"></option>
+                <option value="100"></option>
+                <option value="200"></option>
+                <option value="300"></option>
+                <option value="400"></option>
+                <option value="500"></option>
+            </datalist>
+            <br><br>
+
+            <label for="type">Tipo de bicicleta:</label>
+            <select id="type" name="type">
+                <optgroup label="Urbana">
+                    <option value="cl">Bicicleta Clásica</option>
+                    <option value="pl">Bicicleta Plegable</option>
+                    <option value="el">Bicicleta Eléctrica</option>
+                    <option value="co">Bicicleta Commuter</option>
+                </optgroup>
+
+                <optgroup label="Montaña">
+                    <option value="sp">Bicicletas de tipo Sport</option>
+                    <option value="tr">Bicicletas de tipo Trail o Hard Tail</option>
+                    <option value="xc">Bicicletas para XC o Cross Country</option>
+                </optgroup>
+
+                <optgroup label="Carreras">
+                    <option value="gf">Bicicletas Gran Fondo</option>
+                    <option value="rc">Bicicletas Racing</option>
+                    <option value="ae">Bicicletas Aero</option>
+                </optgroup>
+            </select>
+
+            <br><br>
+
+            <label for="accesorios">Accesorios:</label> <br>
+            <select id="accesorios" name="accesorios" multiple>
+                <option value="ru">Ruedines</option>
+                <option value="hi">Hinchadores</option>
+                <option value="ro">Rodillos</option>
+                <option value="bo">Bomba de aire</option>
+                <option value="al">Alforja</option>
+                <option value="bb">Silla portabebés</option>
+            </select>
+            <br><br>
+
+            <label for="marca">¿Qué marca era?:</label> <br>
+            <select id="marca" name="marca" selected size="21">
+                <option value="pe">pecialized</option>
+                <option value="tr">trek</option>
+                <option value="me">merida</option>
+                <option value="sc">scott</option>
+                <option value="gi">giant</option>
+                <option value="cb">cube</option>
+                <option value="lp">lapierre</option>
+                <option value="or">orbea</option>
+                <option value="ca">cannondale</option>
+                <option value="bm">bmc</option>
+                <option value="ca">canyon</option>
+                <option value="lo">look</option>
+                <option value="pr">protek</option>
+                <option value="me">megamo</option>
+                <option value="pi">pinarello</option>
+                <option value="bi">bianchi</option>
+                <option value="bh">bh</option>
+                <option value="fa">factor</option>
+                <option value="gh">ghost</option>
+                <option value="ce">cervélo</option>
+                <option value="ar">argon</option>
+            </select>
+            <br>
+
+        </fieldset> <br>
+        <input type="reset" value="Borrar todo"> <br><br>
+        <input type="submit" value="Enviar"> <br><br>
+    </form>
+
+</body>
+
+</html>
